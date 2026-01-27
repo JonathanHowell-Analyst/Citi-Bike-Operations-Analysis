@@ -1,0 +1,79 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "cef7a096-403e-4de0-9e6b-c7fa41d971eb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "C:\\Users\\howel\\AppData\\Local\\Temp\\ipykernel_5944\\1898153064.py:9: DtypeWarning: Columns (7) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  df = pd.read_csv(os.path.join(path, '02 Data', 'Original Data', '202502-citibike-tripdata_1.csv'), index_col = False)\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "(997181, 13)"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import os\n",
+    "\n",
+    "# 1. Set the path\n",
+    "path = r'C:\\Users\\howel\\OneDrive\\NYC_CitiBike_Project'\n",
+    "\n",
+    "# 2. Load the data\n",
+    "df = pd.read_csv(os.path.join(path, '02 Data', 'Original Data', '202502-citibike-tripdata_1.csv'), index_col = False)\n",
+    "\n",
+    "# 3. Clean: Remove the rows with missing values we found earlier\n",
+    "df_clean = df.dropna()\n",
+    "\n",
+    "# 4. Save: Export to your 'Prepared Data' folder\n",
+    "df_clean.to_csv(os.path.join(path, '02 Data', 'Prepared Data', 'citibike_cleaned.csv'), index=False)\n",
+    "\n",
+    "# 5. Verify the final count for your report\n",
+    "df_clean.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5430841f-29db-42b9-9b97-239aa24828c9",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
