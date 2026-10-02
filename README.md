@@ -31,6 +31,21 @@ This analysis focuses on three business questions:
 - **Data Analysis** — identifying behavioural and operational patterns
 - **Business Analysis** — translating findings into operational recommendations
 
+## Dataset
+
+The analysis uses approximately **1.1 million Citi Bike trips from February 2022**.
+
+The trip data includes information such as:
+
+- Ride duration
+- Start and end stations
+- Start and end coordinates
+- Rider type
+- Bike type
+- Trip distance
+
+The dataset was cleaned and prepared in Python before behavioural clustering and geographic analysis were performed.
+
 Key Insights
 The Behavioral Split: Identified a clear distinction between "Commuters" (Cluster 0) and "Explorers" (Cluster 2), each requiring a different rebalancing frequency.
 
