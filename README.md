@@ -91,6 +91,45 @@ This geographic perspective can help operations teams:
 - Support bike and station allocation decisions
 - Investigate locations associated with unusual trip patterns
 
+## Key Findings
+
+### 1. Winter Trips Showed Distinct Behaviour Patterns
+Clustering revealed different types of Citi Bike usage rather than one uniform rider pattern, including practical point-to-point journeys and longer exploratory trips.
+
+### 2. Trip Duration and Distance Help Differentiate Rider Behaviour
+Combining duration and distance provided a useful way to distinguish between different journey patterns within the network.
+
+### 3. Location Adds Important Operational Context
+Geographic analysis showed where different trip behaviours occurred, helping translate the clustering results into information that could support station and bike management.
+
+### 4. Zero-Distance Trips Deserve Further Investigation
+Trips with little or no geographic displacement may include legitimate round trips or very short journeys, but they can also provide a useful starting point for investigating potential operational or equipment issues.
+
+## Operational Recommendations
+
+Based on the patterns identified in the analysis, Citi Bike could use the findings to support several operational decisions:
+
+### 1. Align Bike Availability with Demand Patterns
+Use trip and location patterns to identify areas where bike availability may need to be adjusted during winter.
+
+### 2. Support Station Rebalancing
+Combine geographic demand patterns with station-level activity to help prioritise where bikes should be redistributed.
+
+### 3. Investigate Zero-Distance Trip Hotspots
+Identify stations with unusually high concentrations of zero-distance trips and investigate whether these are explained by legitimate rider behaviour or possible bike, docking or data-quality issues.
+
+### 4. Monitor Rider Segments Over Time
+Repeat the clustering analysis across different months or seasons to determine whether rider behaviour changes and whether operational strategies should be adjusted accordingly.
+
+## Limitations
+
+This analysis should be interpreted within several limitations:
+
+- The dataset covers **February 2022**, so the findings represent winter behaviour rather than year-round Citi Bike usage.
+- Clustering identifies patterns in the data but does not prove why riders behaved in a particular way.
+- Zero-distance trips cannot automatically be classified as equipment failures because legitimate round trips or very short journeys may produce similar patterns.
+- Operational decisions would benefit from combining trip data with additional information such as station capacity, bike availability and maintenance records.
+
 Key Insights
 The Behavioral Split: Identified a clear distinction between "Commuters" (Cluster 0) and "Explorers" (Cluster 2), each requiring a different rebalancing frequency.
 
