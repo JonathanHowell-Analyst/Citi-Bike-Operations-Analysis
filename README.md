@@ -1,7 +1,35 @@
 # Citi Bike Operations Analysis
 ### Optimising Winter Operations Through Rider Behaviour and Geographic Analysis
-Executive Summary
-This project analyzes 1.1 million Citi Bike trip records from February 2022 to develop a data-driven winter operations strategy. By moving beyond basic membership categories, I utilized unsupervised machine learning to identify three distinct behavioral clusters. These findings were then localized via a spatial intersect in Tableau to provide a "Logistics Playbook" for Manhattan, Brooklyn, and Queens.
+
+## Executive Summary
+
+This project analyses approximately 1.1 million Citi Bike trips from February 2022 to understand winter rider behaviour and identify opportunities to improve operations.
+
+Using Python, K-means clustering and geographic analysis, the project segments trip behaviour into distinct rider patterns and explores how trip duration, distance and location can support better operational decisions.
+
+The analysis highlights opportunities to improve bike availability, station management and the identification of potentially problematic zero-distance trips.
+
+## Business Problem
+
+Citi Bike operates a large bike-sharing network where demand varies by rider behaviour, location and season.
+
+During winter, understanding how customers use the network can help operations teams allocate bikes more effectively, manage stations and identify unusual trip patterns.
+
+This analysis focuses on three business questions:
+
+1. What distinct rider behaviour patterns exist within winter trips?
+2. Where are different types of trips concentrated geographically?
+3. How can these patterns support better operational decisions?
+
+## Tools & Skills
+
+- **Python** — data cleaning, transformation and exploratory analysis
+- **pandas** — processing approximately 1.1 million trip records
+- **Scikit-learn** — K-means clustering and rider segmentation
+- **Matplotlib / Seaborn** — exploratory data visualisation
+- **Tableau** — geographic and spatial analysis
+- **Data Analysis** — identifying behavioural and operational patterns
+- **Business Analysis** — translating findings into operational recommendations
 
 Key Insights
 The Behavioral Split: Identified a clear distinction between "Commuters" (Cluster 0) and "Explorers" (Cluster 2), each requiring a different rebalancing frequency.
