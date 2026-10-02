@@ -65,7 +65,7 @@ These steps created a clean analytical dataset for rider segmentation and spatia
 
 K-means clustering was used to identify distinct trip patterns within the dataset based on characteristics such as trip duration and distance.
 
-The Elbow Method was used to help determine an appropriate number of clusters.
+The Elbow Method was used to compare different values of K and identify an appropriate number of clusters. Based on this analysis, **three clusters** were selected for the final segmentation.
 
 The analysis revealed three broad behavioural patterns:
 
@@ -82,7 +82,9 @@ Trips where the recorded start and end locations resulted in little or no geogra
 
 Trip patterns were explored geographically using Tableau to understand where different types of journeys occurred across the Citi Bike network.
 
-Mapping the start and end locations helped reveal how rider behaviour varied across the service area and provided operational context for the clusters identified in Python.
+Spatial analysis was performed in Tableau by combining trip coordinates with NYC Neighborhood Tabulation Area (NTA) GeoJSON data. This allowed trip patterns and rider segments identified in Python to be examined geographically across New York City.
+
+The analysis showed that commuter-style trips were concentrated around Manhattan's commercial core, while longer exploratory trips were more prominent around waterfront and leisure areas.
 
 This geographic perspective can help operations teams:
 
@@ -130,25 +132,15 @@ This analysis should be interpreted within several limitations:
 - Zero-distance trips cannot automatically be classified as equipment failures because legitimate round trips or very short journeys may produce similar patterns.
 - Operational decisions would benefit from combining trip data with additional information such as station capacity, bike availability and maintenance records.
 
-Key Insights
-The Behavioral Split: Identified a clear distinction between "Commuters" (Cluster 0) and "Explorers" (Cluster 2), each requiring a different rebalancing frequency.
+## Final Deliverables
 
-Operational Geography: Cluster 0 is heavily anchored in Manhattan’s commercial core, while Cluster 2 dominates waterfront leisure zones.
+### Interactive Tableau Storyboard
+Explore the geographic and behavioural findings in the interactive Tableau dashboard:
 
-Maintenance Alerts: Identified "Zero-Distance" trips (Cluster 1) that signal potential equipment or docking station hardware errors.
+[View the Citi Bike Tableau Storyboard](https://public.tableau.com/views/Task6_7_17695020482740/Story1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-Technical Skills & Tools
-Data Engineering: Performed extensive cleaning, data type management, and coordinate validation on a 1.1M record dataset using Python (Pandas).
+### Analysis Notebooks
+The Python analysis notebooks used for data preparation, exploration and clustering are available in the `03 Scripts` folder.
 
-Machine Learning: Implemented K-means Clustering and utilized the Elbow Technique to determine optimal segment counts.
-
-Spatial Analysis: Conducted a Spatial Intersect in Tableau by joining trip coordinates with NYC Neighborhood Tabulation Area (NTA) GeoJSON files.
-
-Interactive Visualization: Developed a multi-point Tableau Storyboard to communicate findings to stakeholders.
-
-Final Deliverables
-Interactive Storyboard: [https://public.tableau.com/views/Task6_7_17695020482740/Story1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]
-
-Analysis Notebooks: [Located in the 03 Scripts folder]
-
-Case Study PDF: [Located in the 05 Sent to Client folder]
+### Original Case Study
+The original project deliverables are available in the `05 Sent to Client` folder.
