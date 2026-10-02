@@ -46,6 +46,21 @@ The trip data includes information such as:
 
 The dataset was cleaned and prepared in Python before behavioural clustering and geographic analysis were performed.
 
+## Data Preparation
+
+Before analysis, the trip data was prepared in Python to make it suitable for behavioural and geographic analysis.
+
+Key preparation steps included:
+
+- Inspecting the dataset for missing and inconsistent values
+- Converting date and time fields into appropriate formats
+- Calculating trip duration
+- Calculating distance between trip start and end locations
+- Preparing numerical features for clustering
+- Removing or investigating records that could distort the analysis
+
+These steps created a clean analytical dataset for rider segmentation and spatial analysis.
+
 Key Insights
 The Behavioral Split: Identified a clear distinction between "Commuters" (Cluster 0) and "Explorers" (Cluster 2), each requiring a different rebalancing frequency.
 
