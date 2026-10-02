@@ -61,6 +61,36 @@ Key preparation steps included:
 
 These steps created a clean analytical dataset for rider segmentation and spatial analysis.
 
+## Rider Segmentation with K-Means
+
+K-means clustering was used to identify distinct trip patterns within the dataset based on characteristics such as trip duration and distance.
+
+The Elbow Method was used to help determine an appropriate number of clusters.
+
+The analysis revealed three broad behavioural patterns:
+
+### 1. Commuter-Style Trips
+Shorter, more direct journeys consistent with riders using Citi Bike for practical point-to-point transportation.
+
+### 2. Explorer / Leisure Trips
+Longer trips covering greater distances, suggesting more recreational or exploratory use of the network.
+
+### 3. Zero-Distance Trips
+Trips where the recorded start and end locations resulted in little or no geographic displacement. These trips may represent round trips, very short journeys, or potential operational and equipment issues requiring further investigation.
+
+## Geographic Analysis
+
+Trip patterns were explored geographically using Tableau to understand where different types of journeys occurred across the Citi Bike network.
+
+Mapping the start and end locations helped reveal how rider behaviour varied across the service area and provided operational context for the clusters identified in Python.
+
+This geographic perspective can help operations teams:
+
+- Identify areas with concentrated rider demand
+- Understand where different trip behaviours occur
+- Support bike and station allocation decisions
+- Investigate locations associated with unusual trip patterns
+
 Key Insights
 The Behavioral Split: Identified a clear distinction between "Commuters" (Cluster 0) and "Explorers" (Cluster 2), each requiring a different rebalancing frequency.
 
