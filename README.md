@@ -1,4 +1,5 @@
-Project: Citi Bike Winter Mobility Strategy (NYC)
+# Citi Bike Operations Analysis
+### Optimising Winter Operations Through Rider Behaviour and Geographic Analysis
 Executive Summary
 This project analyzes 1.1 million Citi Bike trip records from February 2022 to develop a data-driven winter operations strategy. By moving beyond basic membership categories, I utilized unsupervised machine learning to identify three distinct behavioral clusters. These findings were then localized via a spatial intersect in Tableau to provide a "Logistics Playbook" for Manhattan, Brooklyn, and Queens.
 
